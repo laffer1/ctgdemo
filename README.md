@@ -13,7 +13,7 @@ also proving unsecured endpoints. Spring boot 2.1.x is also missing several fiel
 the netty backend. 
 
 You can use tomcat, jetty, and netty with reactive, but the real performance benefit comes with
-using netty.  The tradeoff is that you lose legacy servlet API features such as filters, sessions, 
+using netty.  The tradeoff is that you lose the legacy servlet API features such as filters, sessions, 
 and third party libraries that can run on to of the servlet API.  It's possible to upgrade
 a legacy application on tomcat to use reactive patterns and even switch to reactive controllers. 
 
@@ -55,5 +55,9 @@ We set the base url and custom timeout settings for the connection.
 
 ## References
 
+* [Bootstrap 4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 * [Thymeleaf](https://docs.spring.io/spring-boot/docs/2.3.3.RELEASE/reference/htmlsingle/#boot-features-spring-mvc-template-engines)
 * [Spring Data Reactive Redis](https://docs.spring.io/spring-boot/docs/2.3.3.RELEASE/reference/htmlsingle/#boot-features-redis)
+* [Webclient examples](https://howtodoinjava.com/spring-webflux/webclient-get-post-example/)
+* [Webclient test and config](https://www.baeldung.com/spring-5-webclient)
+* [Thymeleaf + webflux example](https://mkyong.com/spring-boot/spring-boot-webflux-thymeleaf-reactive-example/)
