@@ -24,6 +24,7 @@
         <module>thymeleaf-standalone</module>
         <module>thymeleaf-webclient</module>
         <module>restapi</module>
+        <module>rest-redis</module>
     </modules>
 
     <build>

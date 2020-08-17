@@ -25,6 +25,13 @@ redis, kafka and a few others with reactive patterns. JDBC sources with relation
 are not reactive, although some newer drivers are starting to support features needed to add
 reactive libraries. (oracle for example) 
 
+## Software
+
+* Spring Boot 2.3.x
+* Java 10
+* Lombok
+* Maven 3
+
 ## Demo 1 - thymeleaf-standalone
 
 This examples makes use of Thymeleaf templates to create a server side reactive web application
