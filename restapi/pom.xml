@@ -8,9 +8,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>thymeleaf-webclient</artifactId>
-	<name>thymeleaf webclient</name>
-	<description>Thymeleaf with REST call</description>
+	<artifactId>restapi</artifactId>
+	<name>rest</name>
+	<description>Example REST API</description>
 
 	<properties>
 		<java.version>10</java.version>
@@ -19,7 +19,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<artifactId>spring-boot-starter-data-redis-reactive</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

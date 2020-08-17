@@ -53,8 +53,30 @@ from a third party REST API.
 The CategoryService now uses the webclient created in WebClientConfig to access the API. 
 We set the base url and custom timeout settings for the connection.  
 
+## Demo 3 - REST API with netty
+
+This application uses netty for a full async, non blocking, rest api
+
+Spring supports two approaches to defining endpoints. The traditional @RestController approach
+and Router/Handler.  For this app, we've stuck with the old school approach as it's more familiar.
+There's no specific advantage to either, although some prefer the readability of defining a
+router and keeping the URLs together. 
+
+GET http://localhost:8080/api/category 
+Returns a JSON response
+
+example:
+[{"id":1,"name":"accessibility","description":""},{"id":2,"name":"archivers","description":""}]
+
+http://localhost:8080/api/category/event
+Returns an event stream for use with newer reactive javascript libraries.
+e.g. data:{"id":1,"name":"accessibility","description":""} 
+
+The performance of these endpoints can be improved as they're calling the external REST service.
+
 ## References
 
+* [Spring Reactive](https://spring.io/reactive)
 * [Bootstrap 4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 * [Thymeleaf](https://docs.spring.io/spring-boot/docs/2.3.3.RELEASE/reference/htmlsingle/#boot-features-spring-mvc-template-engines)
 * [Spring Data Reactive Redis](https://docs.spring.io/spring-boot/docs/2.3.3.RELEASE/reference/htmlsingle/#boot-features-redis)

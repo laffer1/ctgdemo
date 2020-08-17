@@ -23,6 +23,7 @@
     <modules>
         <module>thymeleaf-standalone</module>
         <module>thymeleaf-webclient</module>
+        <module>restapi</module>
     </modules>
 
     <build>

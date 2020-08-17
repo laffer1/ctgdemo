@@ -5,13 +5,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.reactive.config.EnableWebFlux;
 
 /**
- * Simple spring boot app
+ * Example REST API using Spring WebFlux and Netty
  */
+@EnableWebFlux
 @SpringBootApplication
-public class Application {
+public class RestApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(RestApplication.class, args);
+    }
 
 }
