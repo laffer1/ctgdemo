@@ -81,6 +81,17 @@ e.g. data:{"id":1,"name":"accessibility","description":""}
 
 The performance of these endpoints can be improved as they're calling the external REST service.
 
+## Demo 4 - REST API with netty and reactive redis cache
+
+This application uses a set in redis to store the categories obtained from the app store API call. 
+
+It generates a cache on startup. Ideally we'd either schedule a task to refresh the cache or 
+use the optional Duration parameter to get the cache to expire and then populate it when it's empty.
+
+In order to run this application, you will need to either start redis locally, or modify the
+application.yml to set the spring.redis.host and spring.redis.port properties as needed.
+
+
 ## References
 
 * [Spring Reactive](https://spring.io/reactive)
