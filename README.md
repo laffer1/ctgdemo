@@ -43,4 +43,17 @@ special in the HomeController by wrapping it in a ReactiveDataDriverContextVaria
                 new ReactiveDataDriverContextVariable(categoryService.getCategories(), 1);
 
 While this app uses reactive features, it is not using netty as it does not play nice with
-server side templating. 
+server side templating.
+
+## Demo 2 - thymeleaf-webclient
+
+Based on Demo 1, this example shows how to use the reactive WebClient to fetch data
+from a third party REST API.  
+
+The CategoryService now uses the webclient created in WebClientConfig to access the API. 
+We set the base url and custom timeout settings for the connection.  
+
+## References
+
+* [Thymeleaf](https://docs.spring.io/spring-boot/docs/2.3.3.RELEASE/reference/htmlsingle/#boot-features-spring-mvc-template-engines)
+* [Spring Data Reactive Redis](https://docs.spring.io/spring-boot/docs/2.3.3.RELEASE/reference/htmlsingle/#boot-features-redis)
